@@ -37,6 +37,14 @@ export default function Home() {
             </a>
           </div>
         </section>
+
+        <section className="cta-section">
+          <div className="cta-content">
+            <a href="/saaragh" className="cta-button">
+              Visit Saaragh - Spec Coding Consulting
+            </a>
+          </div>
+        </section>
       </main>
 
       <Footer />
