@@ -1,0 +1,14 @@
+sam:
+  enabled: true
+  target_directory: "webhook-server"
+  tech_stack:
+    - "JavaScript"
+    - "Node.js"
+    - "Express"
+  conventions:
+    agents: "webhook-server/agents/"
+    services: "webhook-server/services/"
+    tests: "webhook-server/__tests__/"
+  labels:
+    trigger_dev: "ready-for-dev"
+  output_directory: "_sam-output"
