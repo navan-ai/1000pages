@@ -2,13 +2,15 @@ sam:
   enabled: true
   target_directory: "webhook-server"
   tech_stack:
-    - "JavaScript"
-    - "Node.js"
-    - "Express"
+    - "TypeScript"
+    - "React"
+    - "Next.js"
   conventions:
     agents: "webhook-server/agents/"
     services: "webhook-server/services/"
     tests: "webhook-server/__tests__/"
+    components: "webhook-server/components/"
+    app: "webhook-server/app/"
   labels:
     trigger_dev: "ready-for-dev"
   output_directory: "_sam-output"
