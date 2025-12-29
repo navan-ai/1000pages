@@ -45,6 +45,14 @@ export default function Home() {
             </a>
           </div>
         </section>
+
+        <section className="cta-section">
+          <div className="cta-content">
+            <a href="/navan-ai" className="cta-button">
+              Visit Navan AI - Spec Coding Consulting
+            </a>
+          </div>
+        </section>
       </main>
 
       <Footer />
