@@ -40,6 +40,19 @@ export default function Home() {
 
         <section className="cta-section">
           <div className="cta-content">
+            <a
+              href="https://google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-link"
+            >
+              Visit Google
+            </a>
+          </div>
+        </section>
+
+        <section className="cta-section">
+          <div className="cta-content">
             <a href="/saaragh" className="cta-link">
               Visit Saaragh - Spec Coding Consulting
             </a>
