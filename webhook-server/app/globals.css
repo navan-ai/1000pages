@@ -379,6 +379,44 @@ main {
   transform: translateY(0);
 }
 
+/* CTA Link - hyperlink style for CTA sections */
+.cta-link {
+  color: var(--color-primary-indigo);
+  text-decoration: none;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.cta-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-normal);
+}
+
+.cta-link:hover {
+  color: var(--color-primary-purple);
+}
+
+.cta-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.cta-link:focus {
+  outline: 2px solid var(--color-primary-indigo);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}
+
 /* Footer */
 .footer {
   padding: var(--spacing-xl);

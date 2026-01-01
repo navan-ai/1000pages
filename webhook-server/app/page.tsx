@@ -31,9 +31,9 @@ export default function Home() {
               href="https://github.com/navan-ai/1000pages/issues/new"
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-button"
+              className="cta-link"
             >
-              <span>Create a new page on 1000pages.navan.ai</span>
+              Create a new page on 1000pages.navan.ai
             </a>
           </div>
         </section>
