@@ -317,7 +317,7 @@ main {
 
 /* CTA Section */
 .cta-section {
-  padding: var(--spacing-3xl) var(--spacing-xl);
+  padding: var(--spacing-2xl) var(--spacing-xl);
   background-color: var(--color-bg-secondary);
   display: flex;
   justify-content: center;
@@ -329,54 +329,48 @@ main {
   text-align: center;
 }
 
-.cta-button {
-  display: inline-block;
-  padding: var(--spacing-lg) var(--spacing-2xl);
-  background: var(--gradient-primary);
-  color: var(--color-btn-text);
+/* CTA Link - Hyperlink styling for CTA sections */
+.cta-link {
+  color: var(--color-primary-indigo);
   text-decoration: none;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-weight: 600;
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
   position: relative;
-  overflow: hidden;
+  transition: color var(--transition-fast);
+  padding: var(--spacing-sm) 0;
+  display: inline-block;
 }
 
-.cta-button::before {
+.cta-link::after {
   content: '';
   position: absolute;
-  inset: 0;
-  background: var(--color-btn-hover);
-  opacity: 0;
-  transition: opacity var(--transition-fast);
-  border-radius: inherit;
-  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-normal);
 }
 
-.cta-button:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-xl);
-  color: var(--color-btn-text);
+.cta-link:hover {
+  color: var(--color-primary-purple);
 }
 
-.cta-button:hover::before {
-  opacity: 1;
+.cta-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
-.cta-button span {
-  position: relative;
-  z-index: 2;
-}
-
-.cta-button:focus {
+.cta-link:focus {
   outline: 2px solid var(--color-primary-indigo);
   outline-offset: 4px;
+  border-radius: var(--radius-sm);
 }
 
-.cta-button:active {
-  transform: translateY(0);
+.cta-link:active {
+  opacity: 0.8;
 }
 
 /* Footer */
@@ -410,9 +404,8 @@ main {
     font-size: var(--font-size-lg);
   }
 
-  .cta-button {
-    padding: var(--spacing-md) var(--spacing-xl);
-    font-size: var(--font-size-base);
+  .cta-link {
+    font-size: var(--font-size-lg);
   }
 }
 
@@ -434,12 +427,11 @@ main {
   }
 
   .cta-section {
-    padding: var(--spacing-2xl) var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-md);
   }
 
-  .cta-button {
-    padding: var(--spacing-md) var(--spacing-lg);
-    width: 100%;
-    text-align: center;
+  .cta-link {
+    font-size: var(--font-size-base);
+    padding: var(--spacing-md) 0;
   }
 }

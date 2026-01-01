@@ -31,25 +31,25 @@ export default function Home() {
               href="https://github.com/navan-ai/1000pages/issues/new"
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-button"
+              className="cta-link"
             >
-              <span>Create a new page on 1000pages.navan.ai</span>
+              Create a new page on 1000pages.navan.ai
             </a>
           </div>
         </section>
 
         <section className="cta-section">
           <div className="cta-content">
-            <a href="/saaragh" className="cta-button">
-              <span>Visit Saaragh - Spec Coding Consulting</span>
+            <a href="/saaragh" className="cta-link">
+              Visit Saaragh - Spec Coding Consulting
             </a>
           </div>
         </section>
 
         <section className="cta-section">
           <div className="cta-content">
-            <a href="/navan-ai" className="cta-button">
-              <span>Visit Navan AI - Spec Coding Consulting</span>
+            <a href="/navan-ai" className="cta-link">
+              Visit Navan AI - Spec Coding Consulting
             </a>
           </div>
         </section>
