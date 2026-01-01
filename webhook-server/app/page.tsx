@@ -33,7 +33,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="cta-button"
             >
-              Create a new page on 1000pages.navan.ai
+              <span>Create a new page on 1000pages.navan.ai</span>
             </a>
           </div>
         </section>
@@ -41,7 +41,7 @@ export default function Home() {
         <section className="cta-section">
           <div className="cta-content">
             <a href="/saaragh" className="cta-button">
-              Visit Saaragh - Spec Coding Consulting
+              <span>Visit Saaragh - Spec Coding Consulting</span>
             </a>
           </div>
         </section>
@@ -49,7 +49,7 @@ export default function Home() {
         <section className="cta-section">
           <div className="cta-content">
             <a href="/navan-ai" className="cta-button">
-              Visit Navan AI - Spec Coding Consulting
+              <span>Visit Navan AI - Spec Coding Consulting</span>
             </a>
           </div>
         </section>
